@@ -63,8 +63,8 @@ Resources:
     Properties:
       AccessControl: PublicRead
       WebsiteConfiguration:
-        IndexDocument: Pioneer-HTML5-Shipping.html
-        ErrorDocument: Pioneer-HTML5-Shipping.html
+        IndexDocument: LaunchPadder.html
+        ErrorDocument: LaunchPadder.html
   WebsiteAccessPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
