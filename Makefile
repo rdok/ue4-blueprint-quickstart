@@ -34,8 +34,8 @@ deploy-infrastructure-test:
 	sam deploy \
 		--template-file website-infrastructure.yml \
 		--stack-name rdok-test-launch-padder \
-		--s3-bucket "rdok-test-cicd" \
-		--s3-prefix "launch-padder" \
+		--s3-bucket "rdokos-test-cicd-us-east-1" \
+		--s3-prefix "ue4-blueprint-quickstart-test" \
 		--region "us-east-1" \
 		--confirm-changeset \
 		--capabilities CAPABILITY_IAM \
@@ -47,8 +47,8 @@ deploy-infrastructure-prod:
 	sam deploy \
 		--template-file website-infrastructure.yml \
 		--stack-name rdok-prod-launch-padder \
-		--s3-bucket "rdok-prod-cicd" \
-		--s3-prefix "launch-padder" \
+		--s3-bucket "rdokos-test-cicd-us-east-1" \
+		--s3-prefix "ue4-blueprint-quickstart-prod" \
 		--region "us-east-1" \
 		--confirm-changeset \
 		--capabilities CAPABILITY_IAM \
